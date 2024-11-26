@@ -25,7 +25,7 @@ Follow these steps to set up the project locally:
 1. Clone this repository:
 
    ```bash
-   git clone git clone https://github.com/sergiiosanz10/Portfolio-Angular
+   git clone git clone https://github.com/sergiosanzg/Portfolio-Angular
 2. Install the dependencies:
 
    ```bash

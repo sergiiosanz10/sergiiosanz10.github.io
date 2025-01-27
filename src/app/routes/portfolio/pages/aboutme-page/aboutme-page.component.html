@@ -1,17 +1,31 @@
 <div class="container-fluid">
-
   <div class="row flex-container">
-    <div class="col-6">
+    <div class="col-6 d-flex flex-column">
+      <shared-sergio-sanz class="mt-5"></shared-sergio-sanz>
 
-      <shared-sergio-sanz></shared-sergio-sanz>
-
-      <div class="d-flex mt-5 mx-2 text-container" style="height: 190px;">
+      <div class="d-flex mt-5 mx-2 text-container">
         <div class="vr border border-dark"></div>
         <div class="text mx-2">
-          {{text}}
-          <br>
-          <button type="button" class="aboutBtn mt-3" [routerLink]="['..', 'projects']" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">Projects</button>
-          <button type="button" class="aboutBtn mt-3 mx-5" [routerLink]="['..', 'contact']" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">Contact</button>
+          {{ text }}
+          <br />
+          <button
+            type="button"
+            class="aboutBtn mt-3"
+            [routerLink]="['..', 'projects']"
+            (mouseenter)="onMouseEnter()"
+            (mouseleave)="onMouseLeave()"
+          >
+            Projects
+          </button>
+          <button
+            type="button"
+            class="aboutBtn mt-3 mx-5"
+            [routerLink]="['..', 'contact']"
+            (mouseenter)="onMouseEnter()"
+            (mouseleave)="onMouseLeave()"
+          >
+            Contact
+          </button>
         </div>
       </div>
 

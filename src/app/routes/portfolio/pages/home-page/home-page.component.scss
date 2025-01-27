@@ -36,10 +36,10 @@
 }
 
 @media (max-width: 1375px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+  // .flex-container {
+  //   display: flex;
+  //   flex-direction: column-reverse;
+  // }
 
   .col-6 {
     width: 100%;
@@ -53,4 +53,3 @@
     height: auto !important;
   }
 }
-

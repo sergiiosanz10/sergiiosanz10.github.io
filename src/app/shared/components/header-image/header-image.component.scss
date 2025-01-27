@@ -1,38 +1,44 @@
 @media (max-width: 1375px) {
   .imagen {
-    width: 100%;
+    width: 50% !important;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+    min-width: 80%;
     object-fit: cover;
     object-position: top;
-    height: 120vh;
+    height: 100%;
   }
 }
 
 @media (max-width: 633px) {
-
   .imagen {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
     object-fit: cover;
     object-position: top;
-    height: 80vh;
+    height: 100%;
   }
 }
 @media (max-width: 495px) {
   .imagen {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
     object-fit: cover;
     object-position: top;
-    height: 60vh;
+    height: 100%;
   }
+}
+
+.img-container {
+  display: flex;
+  height: 100% !important;
+  align-items: center;
 }

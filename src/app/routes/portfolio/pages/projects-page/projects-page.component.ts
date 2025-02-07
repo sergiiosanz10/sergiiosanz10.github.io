@@ -19,7 +19,7 @@ export class ProjectsPageComponent {
     },
     {
       name: 'Taskify',
-      description: 'This is an application to organize tasks.',
+      description: 'This is an application to organize tasks. It has a backend built with NestJS.',
       img: '../../../../assets/img/taskify.webp',
       route: 'auth'
     },

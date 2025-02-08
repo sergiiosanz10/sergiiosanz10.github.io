@@ -68,6 +68,14 @@
   width: 50%;
   padding: 10px 20px;
   box-sizing: border-box;
+  opacity: 0; /* Comienza invisible */
+  transform: translateY(50px); /* Comienza desplazado hacia abajo */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Animación suave */
+}
+
+.timeline-item.visible {
+  opacity: 1; /* Se vuelve visible */
+  transform: translateY(0); /* Vuelve a su posición original */
 }
 
 .timeline-item.right {
@@ -80,6 +88,8 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
+  border: 1px solid #454545;
+
 }
 
 .timeline-dot {
@@ -119,5 +129,11 @@
   font-size: 0.9rem;
   color: #454545;
   margin-top: 10px;
+}
+
+@media (max-width: 586px) {
+  .timeline {
+    width: 100%;
+  }
 }
 

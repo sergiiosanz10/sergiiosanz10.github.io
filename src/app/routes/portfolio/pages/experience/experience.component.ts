@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-import {CustomCursorComponent} from "../../../../shared/components/custom-cursor/cursor-component";
+import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
+import { CustomCursorComponent } from "../../../../shared/components/custom-cursor/cursor-component";
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss'
+  styleUrls: ['./experience.component.scss']
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent implements OnInit, AfterViewInit {
   text: string = `Hello! My name is Sergio Sanz, and I am a passionate Front-end developer. I specialize in creating interactive, efficient, and sophisticated web applications using the latest technologies and frameworks.
 
   Over the years, I have honed my skills in HTML, CSS, JavaScript, and TypeScript. I have a solid experience with frameworks such as Angular, and I'm also familiar with Bootstrap for user interface design. In addition, I have experience with CSS preprocessors like Sass.
@@ -24,14 +24,33 @@ export class ExperienceComponent implements OnInit {
     { year: 'June 2024 - Present', title: 'Frontend Developer', description: 'Developing scalable applications using Angular.', company: 'ViewNext' },
   ];
 
+  constructor(private customCursor: CustomCursorComponent) {}
 
+  ngOnInit() {}
 
-  constructor(private customCursor: CustomCursorComponent) {
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    this.checkVisibility();
   }
 
-  ngOnInit() {
-
+  ngAfterViewInit(): void {
+    this.checkVisibility(); // Check visibility after view initialization
   }
+
+  private checkVisibility(): void {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    timelineItems.forEach((item: Element) => {
+      const element = item as HTMLElement; // Casting explícito a HTMLElement
+      const rect = element.getBoundingClientRect();
+      const isVisible = rect.top >= 0 && rect.top <= window.innerHeight * 0.8; // 80% de la altura del viewport
+
+      if (isVisible) {
+        element.classList.add('visible');
+      }
+    });
+  }
+
 
   onMouseEnter() {
     this.customCursor.setIsHovered(true);

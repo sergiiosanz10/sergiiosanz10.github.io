@@ -2,7 +2,7 @@
   <div class="container-fluid">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -16,22 +16,31 @@
             <a class="nav-link" routerLinkActive="active" routerLink="portfolio/about" (click)="closeNav()">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" routerLink="portfolio/projects" (click)="closeNav()">Projects</a>
+            <a class="nav-link" routerLinkActive="active" routerLink="portfolio/experience" (click)="closeNav()">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active" routerLink="portfolio/contact" (click)="closeNav()">Contact</a>
+            <a class="nav-link" routerLinkActive="active" routerLink="portfolio/projects"
+               (click)="closeNav()">Projects</a>
           </li>
-      </ul>
-        <div class="d-flex  align-items-center mt-2 socials" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="portfolio/contact"
+               (click)="closeNav()">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex  align-items-center mt-2 socials" (mouseenter)="onMouseEnter()"
+             (mouseleave)="onMouseLeave()">
           <a href="https://github.com/sergiosanzg"><i class="fa-brands mx-2 icons fa-github text-white"></i></a>
-          <a href="https://www.linkedin.com/in/sergiiosanz10/"><i class="fa-brands mx-2 icons fa-linkedin text-white"></i></a>
-          <a href="https://www.instagram.com/sergiiosanz_10/"><i class="fa-brands mx-2 icons fa-instagram text-white"></i></a>
+          <a href="https://www.linkedin.com/in/sergiiosanz10/"><i
+            class="fa-brands mx-2 icons fa-linkedin text-white"></i></a>
+          <a href="https://www.instagram.com/sergiiosanz_10/"><i
+            class="fa-brands mx-2 icons fa-instagram text-white"></i></a>
         </div>
       </div>
     </div>
 
     <div class="d-flex justify-content-center align-items-center">
-      <a class="navbar-brand name" routerLink="portfolio/home" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">Sergio Sanz García</a>
+      <a class="navbar-brand name" routerLink="portfolio/home" (mouseenter)="onMouseEnter()"
+         (mouseleave)="onMouseLeave()">Sergio Sanz García</a>
     </div>
 
 

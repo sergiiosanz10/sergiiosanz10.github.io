@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { SharedModule } from '../../shared/shared.module';
-
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 
 
@@ -18,14 +18,13 @@ import { SharedModule } from '../../shared/shared.module';
     ContactPageComponent,
     ProjectsPageComponent,
     HomePageComponent,
-
+    ExperienceComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
     PortfolioRoutingModule,
-    MatCardModule
-
+    MatCardModule,
   ]
 })
 export class PortfolioModule { }

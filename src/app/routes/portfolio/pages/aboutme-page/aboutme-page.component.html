@@ -7,24 +7,15 @@
         <div class="vr border border-dark"></div>
         <div class="text mx-2">
           {{ text }}
-          <br />
+          <br/>
           <button
             type="button"
             class="aboutBtn mt-3"
-            [routerLink]="['..', 'projects']"
+            [routerLink]="['..', 'experience']"
             (mouseenter)="onMouseEnter()"
             (mouseleave)="onMouseLeave()"
           >
-            Projects
-          </button>
-          <button
-            type="button"
-            class="aboutBtn mt-3 mx-5"
-            [routerLink]="['..', 'contact']"
-            (mouseenter)="onMouseEnter()"
-            (mouseleave)="onMouseLeave()"
-          >
-            Contact
+            Experience
           </button>
         </div>
       </div>

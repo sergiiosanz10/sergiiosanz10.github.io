@@ -5,6 +5,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { isAuthenticatedGuard, isNotAuthenticatedGuard } from '../Taskify/auth/guards';
+import {ExperienceComponent} from "./pages/experience/experience.component";
 
 
 const routes: Routes = [
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutmePageComponent
+  },
+  {
+    path: 'experience',
+    component: ExperienceComponent
   },
   {
     path: 'contact',

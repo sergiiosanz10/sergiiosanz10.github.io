@@ -16,7 +16,7 @@ import { JwtInterceptor } from './shared/services/interceptors/jwt-interceptor';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     provideAnimationsAsync(),
